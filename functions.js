@@ -3,8 +3,9 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-
-
+function numberToString(n){
+  return String(n);
+}
 /**
  * Adds one to a given number.
  * @param {number} n
