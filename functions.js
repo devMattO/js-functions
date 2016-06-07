@@ -82,6 +82,21 @@ function square(x){
  * @return {number} the result
  */
 
+function calculate(operation,x,y){
+  if(operation === "add"){
+    console.log(x + " + " + y + " = " + (x+y) );
+    return add(x,y);
+  }else if (operation === "subtract") {
+    console.log(x + " - " + y + " = " + (x-y) );
+    return subtract(x,y);
+  }else if(operation === "multiply"){
+    console.log(x + " * " + y + " = " + (x*y) );
+    return multiply(x,y);
+  }else if(operation === "divide"){
+    console.log(x + " / " + y + " = " + (x/y) );
+    return divide(x,y);
+  }
+}
 
 /**
  * Returns true if `a` is greater than `b`.
