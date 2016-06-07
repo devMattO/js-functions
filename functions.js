@@ -205,7 +205,20 @@ function isOdd(n){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-
+function letterGrade(score,total){
+  var result = (score / total) * 100;
+  if (result >= 90) {
+    return "A";
+  }else if(result >= 80){
+    return "B";
+  }else if (result >= 70) {
+    return "C";
+  }else if (result >= 60) {
+    return "D";
+  }else{
+    return "F";
+  }
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -215,14 +228,15 @@ function isOdd(n){
  * @return {object} restaurant
  */
 
-
 /**
  * Joins two strings with a space.
  * @param {string} word1
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-
+function combine(word1,word2){
+  return word1 + " " + word2;
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
