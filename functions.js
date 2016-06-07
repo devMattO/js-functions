@@ -228,6 +228,16 @@ function letterGrade(score,total){
  * @return {object} restaurant
  */
 
+function incrementReviews(restaurant){
+  if (restaurant.reviews === undefined) {
+    restaurant.reviews = 1;
+  }else{
+    restaurant.reviews ++;
+  }
+  return restaurant;
+}
+
+
 /**
  * Joins two strings with a space.
  * @param {string} word1
@@ -246,3 +256,10 @@ function combine(word1,word2){
  * @return {object} circle
  */
 
+function createCircle(radius){
+  var circle = {
+    circumference: 2 * Math.PI * radius,
+    area: Math.PI * (radius * radius)
+  };
+  return circle;
+}
