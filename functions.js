@@ -20,7 +20,9 @@ function increase(n){
  * @param {number} n
  * @return {number}
  */
-
+function decrease(n){
+  return n -= 1;
+}
 
 /**
  * Adds two numbers.
